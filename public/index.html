@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Fórmula 1</title>
+    <style>
+        body { 
+            padding: 40px; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 { color: #e10600; /* Rojo F1 */ }
+        .endpoint { 
+            background: #f4f4f4; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-family: monospace;
+            border-left: 4px solid #e10600;
+        }
+        .metodo {
+            font-weight: bold;
+            color: #28a745; /* Verde para GET */
+            margin-right: 10px;
+        }
+        a { color: #0056b3; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la API de F1 2025</h1>
+    <p>Esta es una API de solo lectura que proporciona información sobre el campeonato mundial de pilotos de la temporada pasada.</p>
+    
+    <h2>Endpoints disponibles:</h2>
+    
+    <div class="endpoint">
+        <span class="metodo">GET</span> 
+        <a href="/api/datos">/api/datos</a>
+    </div>
+    
+    <p><strong>Descripción:</strong> Devuelve una lista completa en formato JSON con los pilotos, sus puntos acumulados, la escudería a la que pertenecen y un valor booleano que indica si lograron al menos una pole position durante la temporada.</p>
+    
+</body>
+</html>
