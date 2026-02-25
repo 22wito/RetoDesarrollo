@@ -14,20 +14,20 @@ Asegúrate de tener instalado en tu equipo:
 
 ### 1. Clonar e Instalar Dependencias
 Abre tu terminal, sitúate en la carpeta del proyecto y ejecuta:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### 2. Configurar Variables de Entorno
-Crea un archivo llamado `.env` en la raíz del proyecto. Aquí configuraremos las credenciales de conexión a la base de datos (por defecto, XAMPP usa el usuario `root` sin contraseña):
-\`\`\`env
+Crea un archivo llamado `.env` en la raíz del proyecto. Aquí configuraremos las credenciales de conexión a la base de datos (por defecto, XAMPP usa el usuario `root` sin contraseña) Aquí un ejemplo:
+```env
 PORT=3000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=f1_2025
 DB_PORT=3306
-\`\`\`
+```
 
 ### 3. Importar la Base de Datos
 En la raíz de este proyecto encontrarás el archivo `database.sql` (o el nombre que le hayas puesto a tu archivo). Sigue estos pasos para montarla:
@@ -38,9 +38,9 @@ En la raíz de este proyecto encontrarás el archivo `database.sql` (o el nombre
 
 ### 4. Arrancar el Servidor
 Una vez la base de datos esté lista, vuelve a tu terminal y arranca el proyecto en modo desarrollo:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 El servidor te indicará que está corriendo. Ya puedes acceder a la aplicación:
 
